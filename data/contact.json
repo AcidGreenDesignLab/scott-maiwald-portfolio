@@ -1,0 +1,14 @@
+{
+  "eyebrow": "Get In Touch",
+  "header": "Let's get started!",
+  "subHeader": "I'm happy to answer any questions or discuss your next project. ",
+  "successHeader": "Thanks for connecting!",
+  "successMessage": "I’ve got your details and will follow up within 24 hours to plan our next steps.",
+  "nameLabel": "Name",
+  "namePlaceholder": "Jane Smith",
+  "emailLabel": "Email",
+  "emailPlaceholder": "jane@company.com",
+  "messageLabel": "Your message",
+  "messagePlaceholder": "Describe the project, role, or what you're looking to build.",
+  "buttonText": "Submit Your Message →"
+}

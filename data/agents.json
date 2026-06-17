@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ui-architect",
+    "name": "UI Architect",
+    "role": "System Governance",
+    "avatar": "❖",
+    "color": "#2dd4bf",
+    "bg": "rgba(45,212,191,0.08)",
+    "description": "Monitors the design canvas to maintain visual consistency, enforcing component governance and scalable design patterns across complex enterprise workflows.",
+    "capabilities": [
+      "Component scaling ",
+      "Pattern matching ",
+      "Visual consistency",
+      "Style enforcement "
+    ],
+    "status": "UI Architect"
+  },
+  {
+    "id": "accessibility-guard",
+    "name": "Accessibility Guard",
+    "role": "Accessibility & Compliance",
+    "avatar": "⧉",
+    "color": "#818cf8",
+    "bg": "rgba(129,140,248,0.08)",
+    "description": "Audits interfaces in real-time against strict regulatory standards, ensuring seamless adherence to ADA, WCAG, and complex compliance guidelines before development begins.",
+    "capabilities": [
+      "WCAG auditing ",
+      "ADA compliance",
+      "Contrast validation ",
+      "Risk mitigation"
+    ],
+    "status": "Accessibility Guard"
+  },
+  {
+    "id": "validation-steward",
+    "name": "Validation Steward",
+    "role": "Testing & Delivery",
+    "avatar": "✦",
+    "color": "#2dd4bf",
+    "bg": "rgba(45,212,191,0.08)",
+    "description": "Conducts rigorous usability testing and performance tracking to validate workflows, ensuring pixel-perfect, production-ready specifications for final deployment.",
+    "capabilities": [
+      "A/B testing ",
+      "Usability validation ",
+      "Impact tracking ",
+      "Developer handoff"
+    ],
+    "status": "Validation Steward"
+  }
+]

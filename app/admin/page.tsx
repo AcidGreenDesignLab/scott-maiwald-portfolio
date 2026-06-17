@@ -1,20 +1,14 @@
-import Navbar, { defaultMenu } from "@/components/Navbar";
-import Hero, { defaultHero } from "@/components/Hero";
-import TrustSignals from "@/components/TrustSignals";
-import ImpactGridAlt from "@/components/ImpactGridAlt";
-import Methodology, { defaultMethodologySteps } from "@/components/Methodology";
-import Capabilities, { defaultCapabilities } from "@/components/Capabilities";
-import MeetTheAgents, { defaultAgents } from "@/components/MeetTheAgents";
-import Contact, { defaultContact } from "@/components/Contact";
-import Footer from "@/components/Footer";
 import fs from "fs";
 import path from "path";
+import AdminDashboard from "./AdminDashboard";
+import { defaultMenu } from "@/components/Navbar";
+import { defaultHero } from "@/components/Hero";
+import { defaultMethodologySteps } from "@/components/Methodology";
+import { defaultCapabilities } from "@/components/Capabilities";
+import { defaultAgents } from "@/components/MeetTheAgents";
+import { defaultContact } from "@/components/Contact";
 
-export default function Home() {
-  const projectsDir = path.join(process.cwd(), "public", "projects");
-  const dataPath = path.join(process.cwd(), "data", "projects.json");
-  const clientsPath = path.join(process.cwd(), "data", "clients.json");
-  
+export default function AdminPage() {
   let menu = defaultMenu;
   try {
     const menuPath = path.join(process.cwd(), "data", "menu.json");
@@ -35,16 +29,9 @@ export default function Home() {
     console.error("Error reading hero.json", e);
   }
 
-  let contact = defaultContact;
-  try {
-    const contactPath = path.join(process.cwd(), "data", "contact.json");
-    if (fs.existsSync(contactPath)) {
-      contact = JSON.parse(fs.readFileSync(contactPath, "utf8"));
-    }
-  } catch (e) {
-    console.error("Error reading contact.json", e);
-  }
-
+  const dataPath = path.join(process.cwd(), "data", "projects.json");
+  const clientsPath = path.join(process.cwd(), "data", "clients.json");
+  
   let projects = [];
   try {
     if (fs.existsSync(dataPath)) {
@@ -54,7 +41,7 @@ export default function Home() {
     console.error("Error reading projects.json", e);
   }
 
-  let clients = [];
+  let clients: string[] = [];
   try {
     if (fs.existsSync(clientsPath)) {
       clients = JSON.parse(fs.readFileSync(clientsPath, "utf8"));
@@ -104,6 +91,17 @@ export default function Home() {
     console.error("Error reading agents.json", e);
   }
 
+  let contact = defaultContact;
+  try {
+    const contactPath = path.join(process.cwd(), "data", "contact.json");
+    if (fs.existsSync(contactPath)) {
+      contact = JSON.parse(fs.readFileSync(contactPath, "utf8"));
+    }
+  } catch (e) {
+    console.error("Error reading contact.json", e);
+  }
+
+  const projectsDir = path.join(process.cwd(), "public", "projects");
   const projectImages: Record<string, string[]> = {};
 
   try {
@@ -133,18 +131,18 @@ export default function Home() {
   }));
 
   return (
-    <>
-      <Navbar menu={menu} />
-      <main>
-        <Hero hero={hero} />
-        <TrustSignals clients={clients} header={clientsHeader} />
-        <ImpactGridAlt projects={finalProjects} />
-        <Methodology steps={methodology} />
-        <Capabilities capabilities={capabilities} />
-        {/* <MeetTheAgents agents={agents} /> */}
-        <Contact contact={contact} />
-      </main>
-      <Footer />
-    </>
+    <div className="min-h-screen bg-slate-950 p-6 md:p-10 pb-20">
+      <AdminDashboard 
+        menu={menu}
+        hero={hero}
+        projects={finalProjects} 
+        clients={clients} 
+        clientsHeader={clientsHeader}
+        methodology={methodology}
+        capabilities={capabilities}
+        agents={agents}
+        contact={contact}
+      />
+    </div>
   );
 }

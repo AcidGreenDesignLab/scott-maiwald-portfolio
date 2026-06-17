@@ -1,11 +1,11 @@
 import Navbar, { defaultMenu } from "@/components/Navbar";
 import Hero, { defaultHero } from "@/components/Hero";
 import TrustSignals from "@/components/TrustSignals";
-import ImpactGridAlt from "@/components/ImpactGridAlt";
+import ImpactGridAlt2 from "@/components/ImpactGridAlt2";
 import Methodology, { defaultMethodologySteps } from "@/components/Methodology";
 import Capabilities, { defaultCapabilities } from "@/components/Capabilities";
 import MeetTheAgents, { defaultAgents } from "@/components/MeetTheAgents";
-import Contact, { defaultContact } from "@/components/Contact";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import fs from "fs";
 import path from "path";
@@ -33,16 +33,6 @@ export default function Home() {
     }
   } catch (e) {
     console.error("Error reading hero.json", e);
-  }
-
-  let contact = defaultContact;
-  try {
-    const contactPath = path.join(process.cwd(), "data", "contact.json");
-    if (fs.existsSync(contactPath)) {
-      contact = JSON.parse(fs.readFileSync(contactPath, "utf8"));
-    }
-  } catch (e) {
-    console.error("Error reading contact.json", e);
   }
 
   let projects = [];
@@ -138,11 +128,11 @@ export default function Home() {
       <main>
         <Hero hero={hero} />
         <TrustSignals clients={clients} header={clientsHeader} />
-        <ImpactGridAlt projects={finalProjects} />
+        <ImpactGridAlt2 projects={finalProjects} />
         <Methodology steps={methodology} />
         <Capabilities capabilities={capabilities} />
         {/* <MeetTheAgents agents={agents} /> */}
-        <Contact contact={contact} />
+        <Contact />
       </main>
       <Footer />
     </>

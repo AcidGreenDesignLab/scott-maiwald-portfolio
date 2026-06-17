@@ -1,0 +1,23 @@
+{
+  "eyebrow": "UI / UX / AI DESIGN",
+  "headerHtml": "Designing <span style=\"background: linear-gradient(135deg, #2dd4bf 0%, #a78bfa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;\">AI-driven</span><br />UI / UX experiences",
+  "subheader": "Combining UI/UX/AI design expertise, using research data, purpose-driven strategies, and secure standards, all to create workflows people love to use. Hire the experience, leverage the AI.",
+  "cta": {
+    "label": "View My Work →",
+    "href": "#work"
+  },
+  "metrics": [
+    {
+      "value": "+40%",
+      "label": "Average user adoption increase across my projects."
+    },
+    {
+      "value": "20+",
+      "label": "Years in the UI/UX sector. 13 years in healthcare."
+    },
+    {
+      "value": "4",
+      "label": "AI-native platforms shipped."
+    }
+  ]
+}

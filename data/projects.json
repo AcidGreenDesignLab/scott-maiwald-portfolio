@@ -1,0 +1,119 @@
+[
+  {
+    "id": "human-ai",
+    "internalName": "Human vs AI",
+    "label": "PERSONAL PROJECT · THOUGHT LEADERSHIP",
+    "headline": "Thought Leadership Campaign",
+    "description": "Designed a 5-week visual storytelling campaign on LinkedIn. Used a historical narrative to position senior design expertise against tech evolution, driving high profile C-suite engagement.",
+    "tags": [
+      "AI Illustration",
+      "Copywriting",
+      "Creative Direction"
+    ],
+    "accent": "#2dd4bf",
+    "accentBg": "rgba(45,212,191,0.08)"
+  },
+  {
+    "id": "crewly",
+    "label": "KAISER PERMANENTE · VIDEO VISIT",
+    "headline": "Closing the Doctor-Patient Gap",
+    "description": "Video Visit is an A-Z streamlined flow with one-tap joins, on a lightweight platform. Added trust elements like clear easy to understand inline help, and realtime human dial-up support.",
+    "tags": [
+      "Prototyping",
+      "UI Design",
+      "UX Research"
+    ],
+    "accent": "#2dd4bf",
+    "accentBg": "rgba(45,212,191,0.08)",
+    "images": [],
+    "internalName": "Video Visit"
+  },
+  {
+    "id": "agrilo",
+    "label": "Kaiser Permanente · IOS APP DESIGN",
+    "headline": "Chemotherapy Side Effects App",
+    "description": "Designed intuitive iOS interface with decision-based navigation, visual trackers, and clinician alerts. Added cloud syncing, and clinician dashboards for immediate response to emergencies.",
+    "tags": [
+      "Mobile iOS App",
+      "Prototyping",
+      "UI/UX Design"
+    ],
+    "accent": "#2dd4bf",
+    "accentBg": "rgba(45,212,191,0.08)",
+    "images": [],
+    "internalName": "KP EICC"
+  },
+  {
+    "id": "otella",
+    "label": "KAISER PERMANENTE · KP.ORG",
+    "headline": "Healthcare at Your Fingertips",
+    "description": "Developed dashboard with biometric logins, self-serve appointment, payments, credit card number management. Clinic wait-times, refill alerts, and 1-step reorder by mail.",
+    "tags": [
+      "Mobile iOS App",
+      "Prototyping",
+      "UI/UX Design"
+    ],
+    "accent": "#2dd4bf",
+    "accentBg": "rgba(45,212,191,0.08)",
+    "images": [],
+    "internalName": "KP ORG"
+  },
+  {
+    "id": "therapy",
+    "label": "AI CODE ASSISTANT · WEB-BASED APP",
+    "headline": "Extract product DNA from any URL",
+    "description": "Using one URL, Design MD extracted our visual DNA into DESIGN.md for AI agents while auditing our PRD, architecture, a test plan and copy to ensure full project alignment.",
+    "tags": [
+      "App Production",
+      "Prototyping",
+      "Web-based"
+    ],
+    "accent": "#2dd4bf",
+    "accentBg": "rgba(45,212,191,0.08)",
+    "images": [],
+    "internalName": "Blueprint"
+  },
+  {
+    "id": "ldoge",
+    "internalName": "LDOGe",
+    "label": "PERSONAL PROJECT · LDOGE.APP",
+    "headline": "Plug Your Financial Leaks",
+    "description": "End-to-end design for a personal finance assistant. Built user flows for rapid bank syncing, proactive alerts for hidden fees, and an active dashboard that uncovers immediate savings.",
+    "tags": [
+      "App Production",
+      "Product Design",
+      "Prototyping"
+    ],
+    "accent": "#2dd4bf",
+    "accentBg": "rgba(45,212,191,0.08)",
+    "images": []
+  },
+  {
+    "id": "portfolio-cms",
+    "internalName": "Portfolio CMS",
+    "label": "PERSONAL PROJECT · CUSTOM CMS DESIGN",
+    "headline": "Bespoke Admin Dashboard",
+    "description": "Designed a sleek, node-based portfolio CMS featuring an intuitive layout for project management, drag-and-drop media ordering, client logo curation, and seamless live updates.",
+    "tags": [
+      "CMS",
+      "Full-Stack UI",
+      "Product Design"
+    ],
+    "accent": "#2dd4bf",
+    "accentBg": "rgba(45,212,191,0.08)"
+  },
+  {
+    "id": "family-vault",
+    "internalName": "Family Vault",
+    "label": "PERSONAL PROJECT · FAMILYVAULT APP",
+    "headline": "Family Information Network",
+    "description": "Designed a private network dashboard for families to track important dates, clothing sizes, color preferences, and wishlists, featuring an AI-powered birthday gift assistant.",
+    "tags": [
+      "Prototyping",
+      "UI/UX Design",
+      "iOS App"
+    ],
+    "accent": "#2dd4bf",
+    "accentBg": "rgba(45,212,191,0.08)"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "num": "01",
+    "title": "Discover",
+    "subtitle": "Map the landscape",
+    "description": "I investigate complex workflows and user needs to align UX strategy with C-level business objectives and regulatory requirements. By leveraging generative AI tools for ideation alongside rigorous field research, we uncover hidden operational constraints before any architecture begins.",
+    "details": [
+      "Workflow shadowing ",
+      "Field research ",
+      "AI-accelerated ideation ",
+      "Stakeholder alignment"
+    ],
+    "color": "#2dd4bf",
+    "bg": "rgba(45,212,191,0.06)"
+  },
+  {
+    "num": "02",
+    "title": "Design",
+    "subtitle": "Architect with precision",
+    "description": "Translating complex data into intuitive, scalable design frameworks using advanced node-based AI tools and high-fidelity prototyping. Every component is engineered for accessibility, ensuring strict compliance across rigorous HIPAA, ADA, and WCAG enterprise standards.  ",
+    "details": [
+      "High-fidelity prototypes ",
+      "Scalable systems ",
+      "Strict compliance ",
+      "Component governance"
+    ],
+    "color": "#818cf8",
+    "bg": "rgba(129,140,248,0.06)"
+  },
+  {
+    "num": "03",
+    "title": "Deploy",
+    "subtitle": "Ship to production",
+    "description": "Seamlessly bridging the gap between design and engineering through meticulous developer handoffs in fast-paced agile environments. We partner with cross-functional technical teams to deliver accessible, production-ready assets that drive immediate operational efficiencies.",
+    "details": [
+      "Developer handoff ",
+      "Agile integration ",
+      "Cross-functional collaboration",
+      "Production-ready assets "
+    ],
+    "color": "#2dd4bf",
+    "bg": "rgba(45,212,191,0.06)"
+  },
+  {
+    "num": "04",
+    "title": "Evolve and Iterate",
+    "subtitle": "Compound returns",
+    "description": "Driving long-term platform adoption and workflow efficiency through quantified impact analysis and continuous A/B testing. We utilize behavioral insights to refine experiences, scale design capabilities, and secure measurable business results over time.",
+    "details": [
+      "Impact tracking ",
+      "A/B testing ",
+      "Change management ",
+      "Team mentorship"
+    ],
+    "color": "#818cf8",
+    "bg": "rgba(129,140,248,0.06)"
+  }
+]

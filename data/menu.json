@@ -1,0 +1,32 @@
+{
+  "logo": {
+    "type": "text",
+    "text": "UX",
+    "label": "Scott Maiwald Portfolio",
+    "href": "#",
+    "imagePath": ""
+  },
+  "links": [
+    {
+      "label": "Work",
+      "href": "#work"
+    },
+    {
+      "label": "Methodology",
+      "href": "#methodology"
+    },
+    {
+      "label": "Capabilities",
+      "href": "#capabilities"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact"
+    }
+  ],
+  "cta": {
+    "label": "Work With Scott",
+    "href": "#contact",
+    "visible": true
+  }
+}

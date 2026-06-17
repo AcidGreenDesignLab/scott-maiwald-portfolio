@@ -1,0 +1,41 @@
+[
+  {
+    "icon": "◈",
+    "title": "AI-Assisted Product Design",
+    "description": "Integrating generative AI and node-based workflows into modern design lifecycles to accelerate and automate ideation, and speed up delivery.",
+    "items": [
+      "Prompt engineering and orchestration",
+      "Node-based generation",
+      "AI-driven persona generation",
+      "Rapid iterative prototyping"
+    ],
+    "color": "#2dd4bf",
+    "bg": "rgba(45,212,191,0.06)"
+  },
+  {
+    "icon": "⬡",
+    "title": "Enterprise UX Architecture",
+    "description": "Architecting intuitive experiences, complex B2B workflows, and governed design systems built for cross-functional alignment and developer execution.",
+    "items": [
+      "Scalable design systems & governance",
+      "Cross-functional alignment",
+      "Advanced systems thinking",
+      "Data visualization & dashboard frameworks"
+    ],
+    "color": "#818cf8",
+    "bg": "rgba(129,140,248,0.06)"
+  },
+  {
+    "icon": "◎",
+    "title": "Regulated Environment Design",
+    "description": "Designing secure, highly accessible interfaces that balance strict data compliance with seamless user adoption across enterprise industries.",
+    "items": [
+      "Healthcare specialization",
+      "WCAG & ADA accessibility compliance",
+      "HIPAA & PCI DSS data security",
+      "Data-driven usability testing"
+    ],
+    "color": "#10b981",
+    "bg": "rgba(16,185,129,0.06)"
+  }
+]
