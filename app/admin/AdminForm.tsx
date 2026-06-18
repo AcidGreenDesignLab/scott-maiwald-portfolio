@@ -303,8 +303,8 @@ export default function AdminForm({ projects }: { projects: any[] }) {
             <div>
               <div className="flex justify-between items-end mb-1">
                 <label className="block text-sm font-medium text-slate-400">Tags (Pills)</label>
-                <span className={`text-xs font-medium ${(tags.split(',').filter(t => t.trim()).length) > 4 ? "text-red-500" : "text-slate-500"}`}>
-                  {tags.split(',').filter(t => t.trim()).length}/4
+                <span className={`text-xs font-medium ${(tags.split(',').filter((t: string) => t.trim()).length) > 4 ? "text-red-500" : "text-slate-500"}`}>
+                  {tags.split(',').filter((t: string) => t.trim()).length}/4
                 </span>
               </div>
               <input
@@ -313,7 +313,7 @@ export default function AdminForm({ projects }: { projects: any[] }) {
                 value={tags}
                 onChange={(e) => setTags(e.target.value)}
                 placeholder="Prototyping, UI Design, UX Research"
-                className={`w-full bg-slate-950 border rounded-lg px-4 py-2.5 text-white focus:outline-none transition-colors ${(tags.split(',').filter(t => t.trim()).length) > 4 ? "border-red-500 focus:border-red-500" : "border-slate-800 focus:border-teal-500"}`}
+                className={`w-full bg-slate-950 border rounded-lg px-4 py-2.5 text-white focus:outline-none transition-colors ${(tags.split(',').filter((t: string) => t.trim()).length) > 4 ? "border-red-500 focus:border-red-500" : "border-slate-800 focus:border-teal-500"}`}
               />
               <p className="text-xs text-slate-500 mt-1">Comma-separated.</p>
             </div>
