@@ -10,5 +10,6 @@
   "emailPlaceholder": "jane@company.com",
   "messageLabel": "Your message",
   "messagePlaceholder": "Describe the project, role, or what you're looking to build.",
-  "buttonText": "Submit Your Message →"
+  "buttonText": "Submit Your Message →",
+  "adminEmail": "scott.maiwald@gmail.com"
 }
