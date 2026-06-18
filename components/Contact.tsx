@@ -30,7 +30,7 @@ export default function Contact({ contact = defaultContact }: { contact?: any })
     const formData = new FormData(form);
 
     try {
-      const emailEndpoint = contact.adminEmail || "scott.maiwald@gmail.com";
+      const emailEndpoint = contact.adminEmail || "c93863105386d0cc1cf96f86f7cd84f2";
       await fetch(`https://formsubmit.co/ajax/${emailEndpoint}`, {
         method: "POST",
         headers: {
