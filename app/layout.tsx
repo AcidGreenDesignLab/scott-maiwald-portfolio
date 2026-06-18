@@ -25,11 +25,20 @@ export const metadata: Metadata = {
     title: "Scott Maiwald - UI/UX/AI Expert and Consultant",
     description: "Expert in UI/UX Design, Artificial Intelligence, and Product Innovation. Building autonomous AI workflows and beautifully designed user experiences.",
     siteName: "Scott Maiwald Portfolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Scott Maiwald Portfolio Preview",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Scott Maiwald - UI/UX/AI Expert and Consultant",
     description: "Expert in UI/UX Design, Artificial Intelligence, and Product Innovation.",
+    images: ["/og-image.png"],
   },
 };
 
