@@ -77,7 +77,7 @@ export default function Capabilities({ capabilities = defaultCapabilities }: { c
               <h3 className="text-lg font-semibold text-white mb-3">{cap.title}</h3>
               <p className="text-sm text-slate-400 leading-relaxed mb-6">{cap.description}</p>
               <ul className="flex flex-col gap-2">
-                {cap.items.map((item) => (
+                {cap.items.map((item: string) => (
                   <li key={item} className="flex items-center gap-2 text-sm text-slate-300">
                     <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ background: cap.color }} />
                     {item}

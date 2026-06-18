@@ -126,7 +126,7 @@ export default function Methodology({ steps = defaultMethodologySteps }: { steps
                   <div className="p-6 rounded-2xl border bg-slate-900/50" style={{ borderColor: `${step.color}30` }}>
                     <p className="text-slate-300 leading-relaxed text-sm mb-5">{step.description}</p>
                     <ul className="flex flex-col gap-2.5">
-                      {step.details.map((d) => (
+                      {step.details.map((d: string) => (
                         <li key={d} className="flex items-center gap-3 text-xs text-slate-400">
                           <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ background: step.color }} />
                           {d}
@@ -165,7 +165,7 @@ export default function Methodology({ steps = defaultMethodologySteps }: { steps
                   <p className="text-slate-400 text-lg leading-relaxed">{step.description}</p>
                 </div>
                 <ul className="flex flex-col gap-2 mt-8">
-                  {step.details.map((d) => (
+                  {step.details.map((d: string) => (
                     <li key={d} className="flex items-center gap-3 text-sm text-slate-300">
                       <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ background: step.color }} />
                       {d}

@@ -122,7 +122,7 @@ export default function MeetTheAgents({ agents = defaultAgents }: { agents?: any
                 animate={{ opacity: hovered === agent.id ? 1 : 0.7 }}
                 className="flex flex-wrap gap-2"
               >
-                {agent.capabilities.map((c) => (
+                {agent.capabilities.map((c: string) => (
                   <span
                     key={c}
                     className="text-xs px-2.5 py-1 rounded-full font-medium"

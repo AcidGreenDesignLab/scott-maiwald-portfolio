@@ -215,7 +215,7 @@ function ProjectCard({
         </h3>
 
         <div className="flex flex-wrap gap-2 mb-5">
-          {project.tags.map((tag) => (
+          {project.tags.map((tag: string) => (
             <span
               key={tag}
               className="px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-[13px] font-medium"

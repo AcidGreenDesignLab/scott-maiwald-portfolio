@@ -204,7 +204,7 @@ export async function reorderProjects(projectIds: string[]) {
 
 // --- CLIENT LOGOS ACTIONS ---
 
-export async function uploadClientLogos(formData: FormData) {
+export async function uploadClientLogos(formData: FormData): Promise<{ success?: boolean; error?: string }> {
   const files = formData.getAll("logos") as File[];
   const clientsDir = path.join(process.cwd(), "public", "clients");
   const dataPath = path.join(process.cwd(), "data", "clients.json");
@@ -245,7 +245,7 @@ export async function uploadClientLogos(formData: FormData) {
   return { success: true };
 }
 
-export async function deleteClientLogo(filename: string) {
+export async function deleteClientLogo(filename: string): Promise<{ success?: boolean; error?: string }> {
   const clientsDir = path.join(process.cwd(), "public", "clients");
   const dataPath = path.join(process.cwd(), "data", "clients.json");
 
@@ -264,7 +264,7 @@ export async function deleteClientLogo(filename: string) {
   return { success: true };
 }
 
-export async function deleteAllClientLogos() {
+export async function deleteAllClientLogos(): Promise<{ success?: boolean; error?: string }> {
   const clientsDir = path.join(process.cwd(), "public", "clients");
   const dataPath = path.join(process.cwd(), "data", "clients.json");
 
@@ -284,7 +284,7 @@ export async function deleteAllClientLogos() {
   return { success: true };
 }
 
-export async function reorderClientLogos(filenames: string[]) {
+export async function reorderClientLogos(filenames: string[]): Promise<{ success?: boolean; error?: string }> {
   const dataPath = path.join(process.cwd(), "data", "clients.json");
   if (fs.existsSync(dataPath)) {
     const current = JSON.parse(fs.readFileSync(dataPath, "utf8"));
@@ -378,28 +378,37 @@ export async function uploadMenuImage(formData: FormData) {
 }
 
 export async function saveMethodology(data: any) {
-  const dataPath = path.join(process.cwd(), "data", "methodology.json");
-  fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
-  
-  revalidatePath("/");
-  revalidatePath("/admin");
-  return { success: true };
+  try {
+    const dataPath = path.join(process.cwd(), "data", "methodology.json");
+    fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
+    revalidatePath("/");
+    revalidatePath("/admin");
+    return { success: true };
+  } catch (err: any) {
+    return { error: err.message };
+  }
 }
 
 export async function saveCapabilities(data: any) {
-  const dataPath = path.join(process.cwd(), "data", "capabilities.json");
-  fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
-  
-  revalidatePath("/");
-  revalidatePath("/admin");
-  return { success: true };
+  try {
+    const dataPath = path.join(process.cwd(), "data", "capabilities.json");
+    fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
+    revalidatePath("/");
+    revalidatePath("/admin");
+    return { success: true };
+  } catch (err: any) {
+    return { error: err.message };
+  }
 }
 
 export async function saveAgents(data: any) {
-  const dataPath = path.join(process.cwd(), "data", "agents.json");
-  fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
-  
-  revalidatePath("/");
-  revalidatePath("/admin");
-  return { success: true };
+  try {
+    const dataPath = path.join(process.cwd(), "data", "agents.json");
+    fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
+    revalidatePath("/");
+    revalidatePath("/admin");
+    return { success: true };
+  } catch (err: any) {
+    return { error: err.message };
+  }
 }
