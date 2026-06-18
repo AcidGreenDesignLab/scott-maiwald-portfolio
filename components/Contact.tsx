@@ -24,9 +24,25 @@ export default function Contact({ contact = defaultContact }: { contact?: any })
   const inView = useInView(ref, { once: true });
   const [submitted, setSubmitted] = useState(false);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setSubmitted(true);
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+
+    try {
+      await fetch(`https://formsubmit.co/ajax/${contact.adminEmail}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify(Object.fromEntries(formData))
+      });
+      setSubmitted(true);
+    } catch (error) {
+      console.error("Form submission error", error);
+      setSubmitted(true);
+    }
   }
 
   return (
@@ -78,6 +94,7 @@ export default function Contact({ contact = defaultContact }: { contact?: any })
                   <label className="text-xs text-slate-400 font-medium">{contact.nameLabel}</label>
                   <input
                     required
+                    name="name"
                     type="text"
                     placeholder={contact.namePlaceholder}
                     className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm placeholder-slate-500 focus:outline-none focus:border-teal-500/50 focus:bg-teal-500/5 transition-colors"
@@ -87,6 +104,7 @@ export default function Contact({ contact = defaultContact }: { contact?: any })
                   <label className="text-xs text-slate-400 font-medium">{contact.emailLabel}</label>
                   <input
                     required
+                    name="email"
                     type="email"
                     placeholder={contact.emailPlaceholder}
                     className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm placeholder-slate-500 focus:outline-none focus:border-teal-500/50 focus:bg-teal-500/5 transition-colors"
@@ -99,6 +117,8 @@ export default function Contact({ contact = defaultContact }: { contact?: any })
                   {contact.messageLabel}
                 </label>
                 <textarea
+                  required
+                  name="message"
                   rows={4}
                   placeholder={contact.messagePlaceholder}
                   className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm placeholder-slate-500 focus:outline-none focus:border-teal-500/50 focus:bg-teal-500/5 transition-colors resize-none"
