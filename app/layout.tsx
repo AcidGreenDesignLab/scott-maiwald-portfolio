@@ -13,9 +13,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AI & Product Innovation Portfolio",
-  description:
-    "Engineering AI-native experiences—trusted data, governed by policy, integrated into real workflows.",
+  title: "Scott Maiwald Portfolio - UI/UX/AI Expert and Consultant",
+  description: "Portfolio of Scott Maiwald: Expert in UI/UX Design, Artificial Intelligence, and Product Innovation. Building autonomous AI workflows and beautifully designed user experiences.",
+  keywords: ["Scott Maiwald", "UI/UX Designer", "AI Expert", "AI Consultant", "Product Innovation", "Web Design", "UX Research", "AI Agents", "Next.js Portfolio"],
+  authors: [{ name: "Scott Maiwald" }],
+  creator: "Scott Maiwald",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://scottmaiwald.com",
+    title: "Scott Maiwald - UI/UX/AI Expert and Consultant",
+    description: "Expert in UI/UX Design, Artificial Intelligence, and Product Innovation. Building autonomous AI workflows and beautifully designed user experiences.",
+    siteName: "Scott Maiwald Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Scott Maiwald - UI/UX/AI Expert and Consultant",
+    description: "Expert in UI/UX Design, Artificial Intelligence, and Product Innovation.",
+  },
 };
 
 export default function RootLayout({
