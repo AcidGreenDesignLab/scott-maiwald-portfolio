@@ -29,6 +29,20 @@
     "internalName": "Video Visit"
   },
   {
+    "id": "3d-product-illustration",
+    "internalName": "3D Product Illustration",
+    "label": "DESIGN LAB · 3D VISUALIZATION",
+    "headline": "Bringing Iconic Brands into 3D Space",
+    "description": "High-fidelity 3D product illustrations exploring hyper-realistic texturing, lighting, and fluid dynamics to translate iconic brand assets into polished, cinematic presentations.",
+    "tags": [
+      "3D Modeling",
+      "Rendering",
+      "Texturing & Lighting"
+    ],
+    "accent": "#2dd4bf",
+    "accentBg": "rgba(45,212,191,0.08)"
+  },
+  {
     "id": "agrilo",
     "label": "Kaiser Permanente · IOS APP DESIGN",
     "headline": "Chemotherapy Side Effects App",
@@ -74,21 +88,6 @@
     "internalName": "Blueprint"
   },
   {
-    "id": "ldoge",
-    "internalName": "LDOGe",
-    "label": "PERSONAL PROJECT · LDOGE.APP",
-    "headline": "Plug Your Financial Leaks",
-    "description": "End-to-end design for a personal finance assistant. Built user flows for rapid bank syncing, proactive alerts for hidden fees, and an active dashboard that uncovers immediate savings.",
-    "tags": [
-      "App Production",
-      "Product Design",
-      "Prototyping"
-    ],
-    "accent": "#2dd4bf",
-    "accentBg": "rgba(45,212,191,0.08)",
-    "images": []
-  },
-  {
     "id": "portfolio-cms",
     "internalName": "Portfolio CMS",
     "label": "PERSONAL PROJECT · CUSTOM CMS DESIGN",
@@ -100,7 +99,8 @@
       "Product Design"
     ],
     "accent": "#2dd4bf",
-    "accentBg": "rgba(45,212,191,0.08)"
+    "accentBg": "rgba(45,212,191,0.08)",
+    "images": []
   },
   {
     "id": "family-vault",
