@@ -90,8 +90,9 @@ export default function Capabilities({ capabilities = defaultCapabilities }: { c
 
         <div className="mt-16 flex justify-center">
           <a
-            href="/resume.pdf"
+            href="/Scott_Maiwald_Sr_UIUXAI_Designer.pdf"
             download="Scott_Maiwald_Sr_UIUXAI_Designer.pdf"
+            target="_blank"
             className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-sm font-medium hover:bg-emerald-500/20 transition-colors duration-200"
           >
             Download My Resume

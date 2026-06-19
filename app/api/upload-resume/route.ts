@@ -26,7 +26,8 @@ export async function POST(request: Request) {
       fs.mkdirSync(uploadDir, { recursive: true });
     }
     
-    const filePath = path.join(uploadDir, 'resume.pdf');
+    // Save the file
+    const filePath = path.join(uploadDir, 'Scott_Maiwald_Sr_UIUXAI_Designer.pdf');
     fs.writeFileSync(filePath, buffer);
     
     return NextResponse.json({ success: true, message: "Resume uploaded successfully" });
