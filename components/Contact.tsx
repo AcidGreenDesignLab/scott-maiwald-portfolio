@@ -37,7 +37,10 @@ export default function Contact({ contact = defaultContact }: { contact?: any })
           "Content-Type": "application/json",
           "Accept": "application/json"
         },
-        body: JSON.stringify(Object.fromEntries(formData))
+        body: JSON.stringify({ 
+          ...Object.fromEntries(formData),
+          _captcha: "false" 
+        })
       });
       setSubmitted(true);
     } catch (error) {
